@@ -10,5 +10,9 @@ services:
       - TWILIO_TOKEN
       - MAIL_MAIL
       - MAIL_PASSWORD
+      - DB_DATABASE
+      - DB_HOST
+      - DB_PASSWORD
+      - DB_USER
     ports:
       - '3010:3010'
