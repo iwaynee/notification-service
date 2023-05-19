@@ -10,11 +10,3 @@ COPY . .
 RUN npm run build
 
 RUN ls /usr/src/app/build
-
-EXPOSE 3010
-
-ENV NODE_ENV=production
-ENV TESST=test
-
-CMD [ "node", "build/app.js" ]
-
