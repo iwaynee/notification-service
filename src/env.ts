@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config();
+dotenv.config({ path: `.env.${process.env.NODE_ENV}` })
 
 export const env = {
     app: {
@@ -8,6 +8,7 @@ export const env = {
         host: process.env.APP_HOST || "",
         prefix: process.env.APP_PREFIX || "api",
         action_prefix: process.env.NOTIFICATION_ACTION_PREFIX || "",
+        environment: process.env.NODE_ENV || "production"
     },
     db: {
         url: "mongodb://" + process.env.DB_HOST || "",

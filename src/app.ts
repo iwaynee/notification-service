@@ -13,8 +13,9 @@ import {createApp} from "./util/express";
 import {userRoutes} from "./routes/user";
 
 
-
 (async () => {
+    logger.info("ENV: " + env.app.environment)
+
     /* SETUP MONGODB */
     getDataSource();
 

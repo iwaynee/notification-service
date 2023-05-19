@@ -10,7 +10,7 @@ const dataSource = new DataSource({
     password: env.db.password,
     database: env.db.database,
     entities: [
-        "src/entities/**/*.ts"
+        env.app.environment === "production" ? "build/entities/**/*.js" : "src/entities/**/*.ts"
     ],
     synchronize: true,
     logging: false,
