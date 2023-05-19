@@ -8,5 +8,7 @@ services:
     environment:
       - TWILIO_SID
       - TWILIO_TOKEN
+      - MAIL_MAIL
+      - MAIL_PASSWORD
     ports:
       - '3010:3010'
