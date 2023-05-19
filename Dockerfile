@@ -13,4 +13,4 @@ RUN ls /usr/app -a
 
 EXPOSE 3010
 
-CMD ["node", "./build/app.js"]
+CMD ["npm", "start"]
