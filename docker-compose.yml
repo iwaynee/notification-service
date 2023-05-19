@@ -4,6 +4,6 @@ services:
     container_name: notification_service
     build: .
     volumes:
-      - .:/usr/src/app
+      - /usr/app/node_modules
     ports:
       - '3010:3010'
