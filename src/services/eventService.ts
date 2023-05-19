@@ -36,7 +36,7 @@ class EventService {
 
             // Save Event
             const e = new Event()
-            e.date = event.date;
+            e.date = event.date || new Date();
             e.topic = event.topic;
             e.type = event.type;
             e.involved_users = event.involved_users;
