@@ -13,4 +13,7 @@ RUN ls /usr/src/app/build
 
 EXPOSE 3010
 
-CMD [ "npm", "start" ]
+ENV NODE_ENV=production
+
+CMD [ "node", "build/app.js" ]
+

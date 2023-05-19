@@ -7,6 +7,6 @@ services:
       - .:/usr/src/app
     ports:
       - '3010:3010'
-    command: npm start
     environment:
-      - NODE_ENV=development
+      - NODE_ENV=production
+    command: npm start
