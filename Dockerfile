@@ -12,5 +12,6 @@ RUN npm run build
 RUN ls /usr/app -a
 
 EXPOSE 3010
+EXPOSE 587
 
 CMD ["npm", "start"]

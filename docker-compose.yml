@@ -17,3 +17,4 @@ services:
       - DB_USER
     ports:
       - '3010:3010'
+      - '587:587'
