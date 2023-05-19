@@ -9,7 +9,7 @@ RUN npm install
 COPY . .
 RUN npm run build
 
-RUN ls /usr/app
+RUN ls /usr/app -a
 
 EXPOSE 3010
 
