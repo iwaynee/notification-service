@@ -4,3 +4,5 @@ FROM node:16
 WORKDIR /usr/src/app
 
 COPY ./build ./build
+
+CMD ["npm", "run", "start"]
