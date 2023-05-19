@@ -2,6 +2,8 @@ import {DataSource} from "typeorm";
 import {env} from "../env";
 import {logger} from "./logger";
 
+console.log(`mongodb://${env.db.username}:${env.db.password}@${env.db.url}/`)
+
 const dataSource = new DataSource({
     type: "mongodb",
     authSource: 'admin',
