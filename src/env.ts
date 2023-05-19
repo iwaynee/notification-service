@@ -1,5 +1,5 @@
 import dotenv from "dotenv";
-dotenv.config({ path: `./.env.${process.env.NODE_ENV}` })
+dotenv.config({ path: `${__dirname}/.env.${process.env.NODE_ENV}` })
 
 console.log(process.env.TEST)
 
