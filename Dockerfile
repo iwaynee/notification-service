@@ -9,4 +9,6 @@ RUN npm install
 COPY . .
 RUN npm build
 
+EXPOSE 3010
+
 CMD ["npm", "run", "start"]
