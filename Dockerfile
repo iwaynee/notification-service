@@ -11,5 +11,4 @@ RUN npm run build
 
 EXPOSE 3010
 
-#CMD ["npm", "run", "start"]
-CMD ["ls -a"]
+CMD ["node", "./build/app.js"]
