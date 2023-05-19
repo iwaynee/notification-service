@@ -9,4 +9,4 @@ services:
       - '3010:3010'
     environment:
       - NODE_ENV=production
-    command: node build/app.js
+    command: node /usr/src/app/build/app.js
