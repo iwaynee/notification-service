@@ -9,6 +9,8 @@ RUN npm install
 COPY . .
 RUN npm run build
 
+RUN ls /usr/src/app/build
+
 EXPOSE 3010
 
 CMD [ "npm", "start" ]
