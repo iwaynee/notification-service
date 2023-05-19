@@ -4,7 +4,7 @@ dotenv.config({ path: `.env.${process.env.NODE_ENV}` })
 export const env = {
     app: {
         name: process.env.APP_NAME ||"",
-        port: process.env.APP_PORT || "",
+        port: Number(process.env.APP_PORT),
         host: process.env.APP_HOST || "",
         prefix: process.env.APP_PREFIX || "api",
         action_prefix: process.env.NOTIFICATION_ACTION_PREFIX || "",
