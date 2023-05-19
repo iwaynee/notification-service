@@ -7,7 +7,7 @@ COPY package*.json ./
 RUN npm install
 
 COPY . .
-RUN npm build
+RUN npm run build
 
 EXPOSE 3010
 
