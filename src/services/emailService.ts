@@ -22,6 +22,8 @@ export class EmailService {
             `${event.content}\n` +
             (event.action ? `${env.app.action_prefix}${event.action}` : "")
 
+        console.log(env.mail.email)
+        console.log(env.mail.password)
 
         this.client.sendMail({
             from: env.mail.email,
