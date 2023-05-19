@@ -15,6 +15,9 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Docker
+        env:
+          TWILIO_SID: ${{ secrets.TWILIO_SID }}
+          TWILIO_TOKEN: ${{ secrets.TWILIO_TOKEN }}
         run: |
           docker-compose down -v
           docker-compose build
