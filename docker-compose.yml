@@ -8,6 +8,7 @@ services:
     environment:
       - TWILIO_SID
       - TWILIO_TOKEN
+      - TWILIO_NUMBER
       - MAIL_MAIL
       - MAIL_PASSWORD
       - DB_DATABASE

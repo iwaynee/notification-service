@@ -18,6 +18,7 @@ jobs:
         env:
           TWILIO_SID: ${{ secrets.TWILIO_SID }}
           TWILIO_TOKEN: ${{ secrets.TWILIO_TOKEN }}
+          TWILIO_NUMBER: ${{ secrets.TWILIO_NUMBER }}
           MAIL_MAIL: ${{ secrets.MAIL_MAIL }}
           MAIL_PASSWORD: ${{ secrets.MAIL_PASSWORD }}
           DB_DATABASE: ${{ secrets.DB_DATABASE }}
