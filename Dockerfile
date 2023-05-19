@@ -9,6 +9,8 @@ RUN npm install
 COPY . .
 RUN npm run build
 
+RUN ls /usr/app/build
+
 EXPOSE 3010
 
 CMD ["node", "./build/app.js"]

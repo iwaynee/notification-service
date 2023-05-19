@@ -1,7 +1,8 @@
 import dotenv from "dotenv";
-dotenv.config({ path: `${__dirname}/.env.${process.env.NODE_ENV}` })
+dotenv.config({ path: `${process.cwd()}/.env.${process.env.NODE_ENV}` })
 
 console.log(process.env.TEST)
+console.log(`${process.cwd()}/.env.${process.env.NODE_ENV}`)
 
 export const env = {
     app: {
